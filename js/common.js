@@ -15,6 +15,10 @@ $(document).ready(function () {
     }
 
 
+    $('.sublink a').click(function(e){
+        e.preventDefault();
+        $(this).next('.submenu').toggleClass('show');
+    })
 
 
 
