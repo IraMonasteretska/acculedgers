@@ -81,6 +81,11 @@ header.header {
             }
         }
     }
+
+    &.blue {
+        background: #102140;
+        padding: 20px 0;
+    }
 }
 
 header.header.sticky {
@@ -193,13 +198,7 @@ header.header ul > li {
         }
 
         &:hover {
-            // background: rgba(255,255,255,0.5);
-            // color: rgb(32 54 95);
             animation: pulse1 2s infinite;
-
-            span {
-                // background: rgb(32 54 95);
-            }
         }
     }
 }
