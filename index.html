@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,6 +21,10 @@
                 </div>
                 <div class="col-xl-9 col-lg-9">
                     <nav>
+                        <button class="closemenu">
+                            <img src="img/close.png" alt="close">
+                        </button>
+
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li class="sublink">
@@ -28,7 +33,7 @@
                                     <li>
                                         <a href="#">
                                             <img src="img/submenu-ic1.svg" alt="icon">
-                                           <span> Virtual Bookkeeping</span>
+                                            <span> Virtual Bookkeeping</span>
                                         </a>
                                     </li>
                                     <li>
@@ -88,10 +93,10 @@
     <main class="main">
         <section class="welcomescreen">
             <div class="container">
-                <h1>
+                <h1 data-aos="fade-up" data-aos-duration="1500">
                     <span>Online Accounting</span> Department for Canadian<br> Small and Medium Sized Businesses.
                 </h1>
-                <div class="description">
+                <div class="description" data-aos="fade-up" data-aos-delay="300">
                     <p>
                         We transform the complexities of bookkeeping into streamlined solutions for businesses and
                         individuals alike. Our comprehensive suite of services is designed to empower you with accurate,
@@ -99,7 +104,7 @@
                         financial management.
                     </p>
                 </div>
-                <a href="#" class="grbtn">
+                <a href="#" class="grbtn" data-aos="fade-up" data-aos-delay="500">
                     Get Started
                     <span>
                         <img src="img/btn-arrow.svg" alt="arrow">
@@ -131,7 +136,7 @@
                     <div class="col-lg-9">
                         <div class="row servicesrow">
                             <div class="col-lg-4 col-sm-6">
-                                <a href="#" class="servicebox">
+                                <a href="#" class="servicebox" data-aos="fade-up">
                                     <img class="servicebox__icon" src="img/serv1.svg" alt="img">
                                     <p>
                                         Sales Tax Reporting
@@ -140,7 +145,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6">
-                                <a href="#" class="servicebox">
+                                <a href="#" class="servicebox" data-aos="fade-up">
                                     <img class="servicebox__icon" src="img/serv2.svg" alt="img">
                                     <p>
                                         Virtual Bookkeeping
@@ -149,7 +154,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6">
-                                <a href="#" class="servicebox">
+                                <a href="#" class="servicebox" data-aos="fade-up">
                                     <img class="servicebox__icon" src="img/serv3.svg" alt="img">
                                     <p>
                                         Online Payroll
@@ -158,7 +163,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6">
-                                <a href="#" class="servicebox">
+                                <a href="#" class="servicebox" data-aos="fade-up" data-aos-delay="300">
                                     <img class="servicebox__icon" src="img/serv4.svg" alt="img">
                                     <p>
                                         Outsourced CFO Services
@@ -167,7 +172,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6">
-                                <a href="#" class="servicebox">
+                                <a href="#" class="servicebox" data-aos="fade-up" data-aos-delay="300">
                                     <img class="servicebox__icon" src="img/serv5.svg" alt="img">
                                     <p>
                                         Catchup Bookkeeping
@@ -176,7 +181,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6">
-                                <a href="#" class="servicebox">
+                                <a href="#" class="servicebox" data-aos="fade-up" data-aos-delay="300">
                                     <img class="servicebox__icon" src="img/serv6.svg" alt="img">
                                     <p>
                                         Through Our Partner CPAs
@@ -211,45 +216,54 @@
                 <ul>
                     <li>
                         <span>1</span>
-                        <p class="title">
-                            Understanding Your Business and Needs
-                        </p>
-                        <p class="descr">
-                            Our initial stage involves understanding the distinctive bookkeeping requirements of you
-                            business and gaining insight into the operational dynamics of your team.
-                        </p>
+                        <div data-aos="fade-up">
+                            <p class="title">
+                                Understanding Your Business and Needs
+                            </p>
+                            <p class="descr">
+                                Our initial stage involves understanding the distinctive bookkeeping requirements of you
+                                business and gaining insight into the operational dynamics of your team.
+                            </p>
+                        </div>
                     </li>
                     <li>
                         <span>2</span>
-                        <p class="title">
-                            Build Your Custom Bookkeeping Package
-                        </p>
-                        <p class="descr">
-                            We will collaborate with you to customize a package for your business, ensuring that we
-                            address all your financial requirements and meet deadlines effectively.
-                        </p>
+                        <div data-aos="fade-up" data-aos-delay="100">
+                            <p class="title">
+                                Build Your Custom Bookkeeping Package
+                            </p>
+                            <p class="descr">
+                                We will collaborate with you to customize a package for your business, ensuring that we
+                                address all your financial requirements and meet deadlines effectively.
+                            </p>
+                        </div>
                     </li>
                     <li>
                         <span>3</span>
-                        <p class="title">
-                            Meet Your Bookkeeper
-                        </p>
-                        <p class="descr">
-                            Using a careful matching procedure, we connect you with a certified bookkeeper possessing
-                            industry-specific expertise, familiarity with your technology, and alignment with your
-                            working methods and company culture.
-                        </p>
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <p class="title">
+                                Meet Your Bookkeeper
+                            </p>
+                            <p class="descr">
+                                Using a careful matching procedure, we connect you with a certified bookkeeper
+                                possessing
+                                industry-specific expertise, familiarity with your technology, and alignment with your
+                                working methods and company culture.
+                            </p>
+                        </div>
                     </li>
                     <li>
                         <span>4</span>
-                        <p class="title">
-                            Leave It To Us
-                        </p>
-                        <p class="descr">
-                            Submit or deliver your financial documents for processing by your designated bookkeeper.
-                            Subsequently, they will offer the necessary personal and professional assistance you
-                            require.
-                        </p>
+                        <div data-aos="fade-up" data-aos-delay="300">
+                            <p class="title">
+                                Leave It To Us
+                            </p>
+                            <p class="descr">
+                                Submit or deliver your financial documents for processing by your designated bookkeeper.
+                                Subsequently, they will offer the necessary personal and professional assistance you
+                                require.
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -282,7 +296,7 @@
                         <div class="testimonials__right">
                             <div class="row tesimtrow">
                                 <div class="col-lg-6 col-md-6">
-                                    <div class="testimonialbox">
+                                    <div class="testimonialbox" data-aos="fade-up" data-aos-delay="100">
                                         <div class="testimonialbox__header">
                                             <img class="gic" src="img/g-ic.svg" alt="google logo">
                                             <div class="testimonialbox__rating">
@@ -305,7 +319,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
-                                    <div class="testimonialbox">
+                                    <div class="testimonialbox" data-aos="fade-up" data-aos-delay="100">
                                         <div class="testimonialbox__header">
                                             <img class="gic" src="img/g-ic.svg" alt="google logo">
                                             <div class="testimonialbox__rating">
@@ -327,7 +341,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
-                                    <div class="testimonialbox">
+                                    <div class="testimonialbox" data-aos="fade-up" data-aos-delay="100">
                                         <div class="testimonialbox__header">
                                             <img class="gic" src="img/g-ic.svg" alt="google logo">
                                             <div class="testimonialbox__rating">
@@ -349,7 +363,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
-                                    <div class="testimonialbox">
+                                    <div class="testimonialbox" data-aos="fade-up" data-aos-delay="100">
                                         <div class="testimonialbox__header">
                                             <img class="gic" src="img/g-ic.svg" alt="google logo">
                                             <div class="testimonialbox__rating">
@@ -474,8 +488,7 @@
                                 <img src="img/footer-logo.svg" alt="logo">
                             </a>
                             <p>
-                                Malesuada pharetra donec diam magna ornare nulla dolor id. Tristique netus venenatis
-                                fermentum tellus.
+                                Online Accounting Department for Canadian Small and Medium Sized Businesses
                             </p>
                             <ul class="footsocials">
                                 <li>
@@ -540,6 +553,7 @@
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/common.js"></script>
 </body>
 
