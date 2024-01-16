@@ -186,8 +186,12 @@ header.header ul > li {
         }
     }
 
-    .submenu li a:hover {
-        color: #102140;
+    .submenu li a {
+        transition: 0.3s;
+
+        &:hover {
+            color: #7bd834;
+        }
     }
 
     .getstarted {

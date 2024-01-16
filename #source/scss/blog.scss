@@ -1,0 +1,103 @@
+.blogsection {
+    background: linear-gradient(180deg, #EFF5FA 0.42%, #DDEDFA 145.89%);
+    padding: 85px 0 120px;
+}
+
+.blogartsect {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.09);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 35px;
+
+    .imgwrap {
+        height: 230px;
+        position: relative;
+        transition: 0.3s;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            transition: 0.3s;
+        }
+    }
+
+    .descrwrap {
+        padding: 25px 25px 25px 35px;
+        position: relative;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 190px;
+        border-bottom: 10px solid #102140;
+
+        .title {
+            font-family: "Montserrat", sans-serif;
+            color: #102140;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 150%;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .date {
+            margin: 0;
+            text-align: right;
+            width: 100%;
+            color: #4D5E6D;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+            line-height: 130%;
+        }
+    }
+
+    // &:hover {
+    //     .imgwrap {
+    //         height: 190px;
+    //     }
+
+    //     .descrwrap {
+    //         height: 230px;
+    //         background: #102140;
+
+    //         .title {
+    //             color: #fff;
+    //             -webkit-line-clamp: 3;
+    //         }
+
+    //         .date {
+    //             color: #F9F9F9;
+    //         }
+    //     }
+    // }
+}
+
+
+// font-family: "Montserrat", sans-serif;
+// font-family: "Nunito Sans", sans-serif;
+
+
+
+
+
+
+
+
+@media(min-width:1620px) {
+    .pagetitlesection.pagetitlesection__blog {
+        .pagetitlesection__imgbox .illustration {
+            left: 140px;
+        }
+    }
+}

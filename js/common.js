@@ -55,57 +55,36 @@ $(document).ready(function () {
         $('.header.header nav').removeClass('show');
     });
 
+    if ($('.servsidebar__servlist-body').length > 0) {
+
+        $(".servsidebar__servlist-body ul").on("click", "a", function (event) {
+            console.log('sdsdsd')
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top - 105 }, 1500);
+        });
 
 
-
-
-
-    
-            if ($('.servsidebar__servlist-body').length > 0) {
-    
-                $(".servsidebar__servlist-body ul").on("click", "a", function (event) {
-                    console.log('sdsdsd')
-                    event.preventDefault();
-                    var id = $(this).attr('href'),
-                        top = $(id).offset().top;
-                    $('body,html').animate({ scrollTop: top - 105 }, 1500);
-                });
-    
-    
-                const links = document.querySelectorAll('.servsidebar__servlist-body li a');
-                window.addEventListener('scroll', () => {
-                    const anchors = document.querySelectorAll('.servsect [id]');
-                    anchors.forEach(anchor => {
-                        if (anchor.closest('.servsect')) {
-                            const anchorTop = anchor.getBoundingClientRect().top + window.pageYOffset;
-                            if (window.pageYOffset >= anchorTop - 110) {
-                                links.forEach(link => {
-                                    const correspondingLink = document.querySelector(`.servsidebar__servlist-body li a[href="#${anchor.id}"]`);
-                                    if (correspondingLink) {
-                                        link.classList.remove('active');
-                                        correspondingLink.classList.add('active');
-                                    }
-                                });
+        const links = document.querySelectorAll('.servsidebar__servlist-body li a');
+        window.addEventListener('scroll', () => {
+            const anchors = document.querySelectorAll('.servsect [id]');
+            anchors.forEach(anchor => {
+                if (anchor.closest('.servsect')) {
+                    const anchorTop = anchor.getBoundingClientRect().top + window.pageYOffset;
+                    if (window.pageYOffset >= anchorTop - 110) {
+                        links.forEach(link => {
+                            const correspondingLink = document.querySelector(`.servsidebar__servlist-body li a[href="#${anchor.id}"]`);
+                            if (correspondingLink) {
+                                link.classList.remove('active');
+                                correspondingLink.classList.add('active');
                             }
-                        }
-                    });
-                });
-    
-    
-    
-    
-    
-    
-    
-            }
+                        });
+                    }
+                }
+            });
+        });
 
-
-
-
-
-
-
-
-
+    }
 
 });
