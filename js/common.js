@@ -88,12 +88,25 @@ $(document).ready(function () {
     }
 
     if ($('#datepicker').length) {
-        $('#datepicker').datepicker();
-        $('#datepicker').on('changeDate', function () {
-            $('#my_hidden_input').val(
-                $('#datepicker').datepicker('getFormattedDate')
-            );
+        // $('#datepicker').datepicker();
+        // $('#datepicker').on('changeDate', function () {
+        //     $('#my_hidden_input').val(
+        //         $('#datepicker').datepicker('getFormattedDate')
+        //     );
+        // });
+        $('#datepicker').datepicker({
+            multidate: true
         });
+    
+        $('#datepicker').on('changeDate', function () {
+            var selectedDates = $('#datepicker').datepicker('getDates');
+            var formattedDates = selectedDates.map(function (date) {
+                return date.toLocaleDateString('en-US');
+            });
+            
+            $('#my_hidden_input').val(formattedDates.join(', '));
+        });
+        
     }
 
     if ($('.styledselect').length) {
