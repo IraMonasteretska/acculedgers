@@ -7,6 +7,9 @@
     <title>Contacts</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/lib/select2.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -103,63 +106,113 @@
             </div>
         </section>
 
-        <section class="contactsection">
-            <img src="img/contacts/contactspage-bg.png" alt="img" class="contactsection__bgpic">
-            
-            <div class="container">
-                <h3>
-                    Communicate with Us:<br>
-                    Fill out our Feedback Form
-                </h3>
-                <div class="descr">
-                    <p>
-                        We are always ready to listen to you and answer your questions. Contact us and we will provide
-                        the necessary assistance
-                    </p>
-                </div>
-                <div class="contformwrapper">
-                    <p class="title">Contact Us</p>
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="inputfield">
-                                    <input type="text" placeholder="First Name">
-                                </div>
+        <div class="contwrapsects">
+             <img src="img/contacts/contactspage-bg.png" alt="img" class="contactsection__bgpic">
+            <section class="connectwithus">
+                <div class="container">
+                    <h3>Connect With Us to Get Started.</h3>
+                    <div class="descr">
+                        <p>
+                            Choose a time that works best for a live consultation. A member ofour bookkeeping team will
+                            connect
+                            with you live to learn more aboutyour business, offer some ways we can help, and provide a
+                            pricingestimate.
+                        </p>
+                        <p>You will receive a calendar invite with a Zoom link. </p>
+                        <p>We look forward to speaking with you!</p>
+                    </div>
+
+                    <div class="calendarwrapper">
+                        <p class="title">
+                            Select a Day
+                        </p>
+                        <form action="#">
+                            <div>
+                                <div id="datepicker" data-date="12/03/2012"></div>
+                                <input type="hidden" id="my_hidden_input">
                             </div>
-                            <div class="col-md-6">
-                                <div class="inputfield">
-                                    <input type="text" placeholder="Last Name">
-                                </div>
+                            <div class="calendarwrapper__selectfield">
+                                <p>Time zone</p>
+                                <select class="styledselect" name="timezone">
+                                    <option value="1">Pacific Time - US & Canada (9:35pm)</option>
+                                    <option value="2">Pacific Time - US & Canada (9:35pm)</option>
+                                    <option value="3">Pacific Time - US & Canada (9:35pm)</option>
+                                    <option value="4">Pacific Time - US & Canada (9:35pm)</option>
+                                    <option value="5">Pacific Time - US & Canada (9:35pm)</option>
+                                </select>
                             </div>
-                            <div class="col-md-6">
-                                <div class="inputfield">
-                                    <input type="email" placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="inputfield">
-                                    <input type="number" placeholder="Phone Number">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="inputfield">
-                                    <textarea placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
+                            <div class="text-center">
                                 <button type="submit" class="contformbtn">
-                                    Submit
+                                    Started
                                     <span>
                                         <img src="img/btn-arrow.svg" alt="arrow">
                                     </span>
                                 </button>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <section class="contactsection">
+                <!-- <img src="img/contacts/contactspage-bg.png" alt="img" class="contactsection__bgpic"> -->
+
+                <div class="container">
+                    <h3>
+                        Communicate with Us:<br>
+                        Fill out our Feedback Form
+                    </h3>
+                    <div class="descr">
+                        <p>
+                            We are always ready to listen to you and answer your questions. Contact us and we will
+                            provide
+                            the necessary assistance
+                        </p>
+                    </div>
+                    <div class="contformwrapper">
+                        <p class="title">Contact Us</p>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="inputfield">
+                                        <input type="text" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputfield">
+                                        <input type="text" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputfield">
+                                        <input type="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputfield">
+                                        <input type="number" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="inputfield">
+                                        <textarea placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="contformbtn">
+                                        Submit
+                                        <span>
+                                            <img src="img/btn-arrow.svg" alt="arrow">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
 
     <footer class="footer">
@@ -238,6 +291,9 @@
 
     <script src="js/jquery.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/select2.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 

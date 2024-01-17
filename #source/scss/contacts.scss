@@ -1,6 +1,6 @@
 .contactsection {
     padding: 110px 0 120px;
-    background: linear-gradient(180deg, #EFF5FA 0.42%, #DDEDFA 145.89%);
+
     position: relative;
 
     h3 {
@@ -87,19 +87,21 @@
         }
     }
 
-    .contformbtn {
-        @include greenbtn;
-        border: none;
-        outline: none;
-        max-width: 240px;
-        cursor: pointer;
-        justify-content: center;
-        padding-left: 20px;
-        padding-right: 50px;
 
-        &:hover {
-            animation: pulse2 2s infinite;
-        }
+}
+
+.contformbtn {
+    @include greenbtn;
+    border: none;
+    outline: none;
+    max-width: 240px;
+    cursor: pointer;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 50px;
+
+    &:hover {
+        animation: pulse2 2s infinite;
     }
 }
 
@@ -109,7 +111,7 @@
     right: 0;
     margin: 0 auto;
     display: block;
-    bottom: 40px;
+    top: 20%;
     filter: blur(6px);
     max-width: 100%;
 }
@@ -125,6 +127,191 @@ textarea::-webkit-scrollbar-track {
 textarea::-webkit-scrollbar-thumb {
     background: rgba(16, 33, 64, 0.4);
 }
+
+// ---update
+
+.contwrapsects {
+    background: linear-gradient(180deg, #EFF5FA 0.42%, #DDEDFA 145.89%);
+    position: relative;
+}
+
+.connectwithus {
+    padding: 105px 0 10px;
+    position: relative;
+    z-index: 3;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 45px;
+        color: #102140;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 125%;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .descr {
+        margin: 0 auto 20px;
+        max-width: 722px;
+        text-align: center;
+
+        p {
+            font-size: 18px;
+            color: #102140;
+            line-height: 180%;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.calendarwrapper {
+    .title {
+        color: #102140;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 180%;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+}
+
+.calendar {
+    position: relative;
+    width: 296px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+// datepicker
+.datepicker {
+    background: #fff;
+    width: 291px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+.datepicker .datepicker-switch {
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.datepicker table {
+    width: 100%;
+}
+
+.datepicker th.dow {
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.datepicker td.day {
+    font-size: 15px;
+    color: #5A5D60;
+    font-weight: 500;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active[disabled] {
+    background-color: #7BD834;
+}
+
+.datepicker table tr td.active {
+    background: #7BD834 !important;
+
+}
+
+.datepicker .next,
+.datepicker .prev {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+        background: #598638;
+        color: #fff;
+    }
+}
+
+.calendarwrapper__selectfield {
+    margin: 25px auto 50px;
+    width: 333px;
+
+    p {
+        margin-bottom: 5px;
+        color: #102140;
+        font-size: 17px;
+        font-weight: 800;
+        line-height: 180%;
+    }
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #102140;
+        padding-left: 24px;
+        background: url('../img/contacts/earth.svg') no-repeat left center / 17px;
+    }
+
+    .select2-container--default .select2-selection--single {
+        background-color: transparent;
+        border: none;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        background: url('../img/contacts/selectarr.png') no-repeat center right / 12px;
+
+        b {
+            display: none;
+        }
+    }
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #629b35;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #efefef;
+}
+
 
 @media(min-width:1620px) {
     .pagetitlesection.pagetitlesection__contacts {
@@ -180,7 +367,9 @@ textarea::-webkit-scrollbar-thumb {
         max-width: 80%;
     }
 
-
+    .connectwithus {
+        padding-top: 80px;
+    }
 
 }
 
@@ -205,12 +394,17 @@ textarea::-webkit-scrollbar-thumb {
         margin-bottom: 30px;
     }
 
+    .connectwithus h3 {
+        margin-bottom: 20px;
+    }
+
 
     .contactsection h3 {
         font-size: 28px;
     }
 
-    .contformwrapper .title {
+    .contformwrapper .title,
+    .connectwithus h3 {
         font-size: 28px;
     }
 
@@ -224,6 +418,19 @@ textarea::-webkit-scrollbar-thumb {
     .contactsection__bgpic {
         max-width: 100%;
     }
+
+    .connectwithus .descr p {
+        line-height: 160%;
+    }
+
+    .calendarwrapper .title {
+        margin-bottom: 15px;
+    }
+
+    .calendarwrapper__selectfield {
+        margin: 20px auto 40px;
+    }
+
 }
 
 @media(max-width:575.8px) {
@@ -257,13 +464,29 @@ textarea::-webkit-scrollbar-thumb {
         border-radius: 10px;
     }
 
+    .connectwithus {
+        padding-top: 60px;
+    }
 
+    .contwrapsects {
+        overflow: hidden;
+    }
 
+    .contactsection__bgpic {
+        max-width: 680px;
+        left: -50%;
+        transform: translateX(50%);
+        top: 30%;
+    }
 
-
-    .contactsection h3 {
+    .contactsection h3,
+    .connectwithus h3 {
         font-size: 24px;
         margin-bottom: 15px;
+    }
+
+    .connectwithus .descr p {
+        font-size: 16px;
     }
 
 }

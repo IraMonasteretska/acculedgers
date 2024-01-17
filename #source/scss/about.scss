@@ -1,0 +1,200 @@
+.pagetitlesection.pagetitlesection__about {
+    .pagetitlesection__descr p {
+        max-width: 473px;
+        margin-bottom: 10px;
+    }
+
+    .illustration {
+        bottom: 29px;
+        left: 200px;
+        top: initial;
+    }
+}
+
+.outmission {
+    padding: 86px 0 150px 0;
+    background: url('../img/about/lblue-bg.png') no-repeat bottom center / 100% auto;
+    overflow: hidden;
+
+    .imgwrap {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            transform: translateX(-90px);
+        }
+    }
+
+    .outmission__descr {
+
+        .title,
+        h3 {
+            color: #102140;
+            font-family: "Montserrat", sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 125%;
+            margin-bottom: 45px;
+        }
+
+        .descr {
+            max-width: 545px;
+
+            p {
+                color: #4D5E6D;
+                font-size: 18px;
+                line-height: 180%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.whychoose {
+    position: relative;
+    padding: 138px 0 150px;
+
+    p.title,
+    h3 {
+        font-family: "Montserrat", sans-serif;
+        color: #102140;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 125%;
+        margin-bottom: 58px;
+    }
+}
+
+.chooselist {
+    padding-left: 269px;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        li {
+            margin-bottom: 55px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+
+            .imgwrap {
+                width: 100%;
+                max-width: 87px;
+                flex: 0 0 87px;
+
+                img {
+                    width: 100%;
+                    filter: drop-shadow(0px 4px 8px rgba(50, 88, 157, 0.39));
+                }
+            }
+
+            .descrwrap {
+                width: 100%;
+                max-width: calc(100% - 87px);
+                flex: 0 0 calc(100% - 87px);
+                padding-left: 32px;
+            }
+
+            p {
+                color: #4D5E6D;
+                font-size: 18px;
+                line-height: 160%;
+                margin: 0;
+                max-width: 521px;
+            }
+
+            .chooselist__title {
+                margin-bottom: 10px;
+                color: #102140;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 160%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2) {
+                padding-left: 100px;
+            }
+
+            &:nth-child(3) {
+                padding-left: 200px;
+            }
+
+            &:nth-child(4) {
+                padding-left: 300px;
+            }
+
+            &:nth-child(5) {
+                padding-left: 400px;
+            }
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 100%;
+            background: rgba(50, 88, 157, 0.40);
+            position: absolute;
+            top: 0;
+            transform: rotate(-20deg);
+            transform: rotate(-29deg);
+            left: 255px;
+        }
+    }
+}
+
+.whychoose__bgpic1 {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.whychoose__bgpic2 {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+}
+
+.commitment {
+    padding: 130px 0 245px;
+    background: url(../img/about/lblue-bg.png) no-repeat bottom center/100% auto;
+
+    h3,
+    .title {
+        text-align: center;
+        margin-bottom: 80px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        color: #102140;
+        font-weight: 600;
+        line-height: 125%;
+    }
+}
+
+.commitment__boxes {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.commitment__box {
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+// font-family: "Montserrat", sans-serif;
+// font-family: "Nunito Sans", sans-serif;

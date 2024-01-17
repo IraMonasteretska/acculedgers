@@ -87,4 +87,21 @@ $(document).ready(function () {
 
     }
 
+    if ($('#datepicker').length) {
+        $('#datepicker').datepicker();
+        $('#datepicker').on('changeDate', function () {
+            $('#my_hidden_input').val(
+                $('#datepicker').datepicker('getFormattedDate')
+            );
+        });
+    }
+
+    if ($('.styledselect').length) {
+        $('.styledselect').select2({
+            minimumResultsForSearch: -1,
+            dropdownCssClass: "headerselectdropdown"
+        });
+    }
+
+
 });
