@@ -1,0 +1,15 @@
+.outmission.outmission__hw {
+    padding: 80px 0;
+}
+
+.whychoose.whychoose__hw {
+    .chooselist ul:after {
+        height: calc(100% - 100px);
+        transform: rotate(-25deg);
+        left: 136px;
+    }
+}
+
+.outmission__imgwrap img {
+    max-width: 100%;
+}

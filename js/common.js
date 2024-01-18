@@ -94,27 +94,53 @@ $(document).ready(function () {
         //         $('#datepicker').datepicker('getFormattedDate')
         //     );
         // });
+
+
         $('#datepicker').datepicker({
             multidate: true
         });
-    
+
         $('#datepicker').on('changeDate', function () {
             var selectedDates = $('#datepicker').datepicker('getDates');
             var formattedDates = selectedDates.map(function (date) {
                 return date.toLocaleDateString('en-US');
             });
-            
+
             $('#my_hidden_input').val(formattedDates.join(', '));
         });
-        
     }
 
+
+    // styled select
     if ($('.styledselect').length) {
         $('.styledselect').select2({
             minimumResultsForSearch: -1,
             dropdownCssClass: "headerselectdropdown"
         });
     }
+
+
+
+
+
+    if ($('#datepicker1').length) {
+        flatpickr("#datepicker1", {
+            // mode: "range",
+            // dateFormat: "Y-m-d"
+    
+            mode: "range",
+                minDate: "today",
+                dateFormat: "Y-m-d",
+                inline: true
+                // disable: [
+                //     function(date) {
+                //         // disable every multiple of 8
+                //         return !(date.getDate() % 8);
+                //     }
+                // ]
+          });
+    }
+   
 
 
 });
