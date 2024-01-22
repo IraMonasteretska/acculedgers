@@ -215,7 +215,7 @@
     flex: 0 0 64%;
     padding-top: 100px;
     padding-bottom: 130px;
-    
+
 
     ul {
         list-style-type: none;
@@ -541,7 +541,7 @@
 }
 
 @keyframes pulse3 {
-    
+
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(16, 33, 64, .3);
     }
@@ -579,6 +579,7 @@
 
 .pbottsection .contactblock ul li a {
     transition: 0.3s;
+
     &:hover {
         animation: pulse3 2s infinite;
     }
@@ -589,7 +590,41 @@
 // font-family: "Nunito Sans", sans-serif;
 
 
+// v2
 
+.welcomescreen.v2 {
+    overflow: hidden;
+
+    .imgwrap {
+        text-align: right;
+        position: relative;
+
+        .imgw {
+            display: inline-block;
+            max-width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .imgel {
+            position: absolute;
+            left: 0;
+            bottom: -170px;
+            max-width: calc(100% + 30px);
+        }
+    }
+}
+
+.outcustservproc-lpic {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.testimonials-lpic {
+    max-width: 100%;
+}
 
 
 
@@ -608,6 +643,10 @@
 @media(min-width:1300px) and (max-height:750px) {
     .welcomescreen .welcomescreen__bgpic {
         width: 550px;
+    }
+
+    .welcomescreen.v2 .imgwrap .imgel {
+        display: none;
     }
 }
 
@@ -722,9 +761,11 @@
         padding-left: 300px;
     }
 
+    .welcomescreen.v2 {
+        padding-top: 160px;
+    }
 
-
-
+    
 
 
 
@@ -976,6 +1017,15 @@
         margin-bottom: 30px;
     }
 
+    .testimonials__left .testimonials-lpic {
+        max-width: 100%;
+    }
+
+    .welcomescreen.v2 .imgwrap .imgel {
+        max-width: 100%;
+        bottom: -120px;
+    }
+
 }
 
 @media(max-width:991.8px) {
@@ -1102,7 +1152,11 @@
         margin-bottom: 20px;
     }
 
-
+    .outcustservproc-lpic {
+        width: 230px;
+        right: 0;
+        left: initial;
+    }
 
 
     .welcomescreen h1 {
@@ -1116,7 +1170,23 @@
     .servicebox p {
         font-size: 18px;
     }
+    
+    .welcomescreen.v2 {
+        min-height: 100vh;
+        height: auto;
+    }
 
+    .welcomescreen.v2 .imgwrap {
+        text-align: center;
+        margin-top: 30px;
+
+        .imgel {
+            right: 0;
+            margin: 0 auto;
+            bottom: -100px;
+        }
+    }
+    
 }
 
 @media(max-width:767.8px) {
@@ -1243,9 +1313,9 @@
     .outcustservproc__rightsect ul li {
         padding-left: 40px;
 
-         p {
+        p {
             line-height: 140%;
-         }
+        }
     }
 
     .outcustservproc__bgpic {
@@ -1305,9 +1375,9 @@
         margin-bottom: 20px;
     }
 
-
-
-
+    .welcomescreen.v2 .imgwrap .imgel {
+        display: none;
+    }
 
 
 

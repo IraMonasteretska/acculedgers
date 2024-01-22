@@ -318,8 +318,11 @@
 }
 
 
-
-
+@media(min-width:1700px) {
+    .pagetitlesection.pagetitlesection__about .pagetitlesection__imgbox .illustration{
+        left: 220px;
+    }
+}
 
 @media(max-width:1599.8px) {
 
