@@ -1236,7 +1236,9 @@
         max-width: 270px;
     }
 
-
+    .outcustservproc-lpic {
+        width: 160px;
+    }
 
 
 
@@ -1379,7 +1381,9 @@
         display: none;
     }
 
-
+    .outcustservproc-lpic {
+        width: 130px;
+    }
 
 
     .our-services h3 {
@@ -1394,4 +1398,10 @@
         font-size: 21px;
     }
 
+}
+
+@media(max-width:374.8px) {
+    .outcustservproc-lpic {
+        display: none;
+    }
 }
